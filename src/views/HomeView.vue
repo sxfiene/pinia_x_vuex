@@ -14,6 +14,7 @@
     <hr>
   <div>
     <h3>Edit Counter :</h3>
+
     <input v-model="counterStore.count" type="number">
   </div>
   </div>
