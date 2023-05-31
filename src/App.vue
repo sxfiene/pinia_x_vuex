@@ -1,9 +1,9 @@
 <template>
   <div class="app">
     <nav>
-      <RouterLink to="/">Home </RouterLink>
+      <RouterLink to="/">Pinia </RouterLink>
       <a>|</a>
-      <RouterLink to="/about"> About</RouterLink>
+      <RouterLink to="/VuexView"> VuexView</RouterLink>
     </nav>
 
     <RouterView />
@@ -13,5 +13,5 @@
 <style scoped>
 .app{
   text-align: center;
-} 
+}
 </style>

@@ -18,8 +18,8 @@ export const useCounterStore = defineStore({
 
   getters: ({
     oddOrEven: (state) => {
-      if (state.count % 2 === 0) return 'even' 
-      return'ood'
+      if (state.count % 2 === 0) return 'pair'
+      return'impair'
     }
 
   })
