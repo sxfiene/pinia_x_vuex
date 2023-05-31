@@ -16,9 +16,18 @@
         <input v-model="store.state.countx" type="number">
     </div>
 
+    <hr>
+
+    <div id="cart">
+        <h2>Cart</h2>
+        <p>Items in cart: {{ counterStore.cart }}</p>
+    </div>
+
 </template>
 
 <script setup>
+import { useCounterStore } from '@/stores/counter'
+const counterStore = useCounterStore()
     import { useStore } from 'vuex'
     const store = useStore()
 
@@ -34,18 +43,5 @@
 .buttons button{
     font-size: 40px;
     margin: 20px;
-}
-
-.about{
-    text-align: center;
-    display: flex; justify-content: space-between;
-}  .buttons button{
-       font-size: 40px;
-       margin: 20px;
-   }
-
-.home{
-    text-align: center;
-    display: flex; justify-content: space-between;
 }
 </style>

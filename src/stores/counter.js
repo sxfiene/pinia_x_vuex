@@ -1,9 +1,11 @@
 import { defineStore } from 'pinia'
+import {reactive} from "vue";
 
 export const useCounterStore = defineStore({
   id: 'counter',
   state: () => ({
     count: 10,
+    cart: reactive([]),
   }),
 
   actions: ({
@@ -13,7 +15,11 @@ export const useCounterStore = defineStore({
 
     decreaseCount(){
       this.count--
-    }
+    },
+
+    addToCart(obj){
+      this.cart.push(obj)
+    },
   }),
 
   getters: ({

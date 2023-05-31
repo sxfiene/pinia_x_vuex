@@ -1,9 +1,9 @@
 <template>
   <div class="app">
     <nav>
-      <RouterLink to="/">Pinia </RouterLink>
-      <a>|</a>
-      <RouterLink to="/VuexView"> VuexView</RouterLink>
+      <RouterLink to="/">Pinia</RouterLink>
+      <a> | </a>
+      <RouterLink to="/VuexView">Vuex</RouterLink>
     </nav>
 
     <RouterView />

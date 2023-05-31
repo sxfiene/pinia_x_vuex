@@ -9,17 +9,29 @@
     </div>
 
   Ce conteur est :  {{ counterStore.oddOrEven }}
-
     <div>
         <h3>Edit Counter :</h3>
 
         <input v-model="counterStore.count" type="number">
     </div>
+  <hr>
+
+  <div id="cart">
+      <h2>Cart</h2>
+      <p>Items in cart: {{ counterStore.cart }}</p>
+      <button @click="counterStore.addToCart(objetOne)">Add object 1</button>
+  </div>
+
 </template>
 
 <script setup>
     import { useCounterStore } from '@/stores/counter' 
     const counterStore = useCounterStore()
+
+    const objetOne = {
+        name: 'objet1',
+        price: 10
+    }
 </script>
 
 <style scoped>
