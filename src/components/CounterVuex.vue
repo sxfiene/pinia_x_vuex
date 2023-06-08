@@ -1,8 +1,12 @@
 <template>
     <div class="countV">
         {{ store.state.countx }}
+        <hr>
+        <p>
+            Item in Vuex's Cart : {{ store.state.cartx }}
+        </p>
     </div>
-
+        <button @click="store.commit('addToCart', objetOne)">Add object 1</button>
 
     <div class="buttons">
         <button @click="store.commit('increment')">+</button>
@@ -20,7 +24,7 @@
 
     <div id="cart">
         <h2>Cart</h2>
-        <p>Items in cart: {{ counterStore.cart }}</p>
+        <p>Items in Pinia's cart: {{ counterStore.cart }}</p>
     </div>
 
 </template>
@@ -31,7 +35,10 @@ const counterStore = useCounterStore()
     import { useStore } from 'vuex'
     const store = useStore()
 
-
+let objetOne = {
+    name: 'objet1',
+    price: 10
+}
 </script>
 
 <style scoped>

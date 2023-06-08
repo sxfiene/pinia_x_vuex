@@ -1,37 +1,38 @@
 <template>
     <div class="countP">
-      {{ counterStore.count }}
+        {{ count }}
     </div>
 
     <div class="buttons">
-        <button @click="counterStore.increaseCount">+</button>
-        <button @click="counterStore.decreaseCount">-</button>
+        <button @click="increaseCount">+</button>
+        <button @click="decreaseCount">-</button>
     </div>
 
-  Ce conteur est :  {{ counterStore.oddOrEven }}
+  This counter is :  {{ oddOrEven }}
     <div>
         <h3>Edit Counter :</h3>
-
-        <input v-model="counterStore.count" type="number">
+        <input v-model.number="count" type="number">
     </div>
-  <hr>
 
-  <div id="cart">
-      <h2>Cart</h2>
-      <p>Items in cart: {{ counterStore.cart }}</p>
-      <button @click="counterStore.addToCart(objetOne)">Add object 1</button>
-  </div>
+    <hr>
+
+    <div id="cart">
+        <h2>Cart</h2>
+        <p>Items in Pinia cart: {{ cart }}</p>
+        <button @click="addToCart(objetOne)">Add object 1</button>
+    </div>
 
 </template>
 
 <script setup>
-    import { useCounterStore } from '@/stores/counter' 
-    const counterStore = useCounterStore()
+import { useCounterStore } from '@/stores/counter';
 
-    const objetOne = {
-        name: 'objet1',
-        price: 10
-    }
+const { count, increaseCount, oddOrEven, decreaseCount, addToCart, cart } = useCounterStore();
+
+const objetOne = {
+    name: 'objet1',
+    price: 10
+};
 </script>
 
 <style scoped>
@@ -45,3 +46,4 @@
     margin: 20px;
 }
 </style>
+```

@@ -1,33 +1,30 @@
-import { defineStore } from 'pinia'
-import {reactive} from "vue";
+import { defineStore } from 'pinia';
+import { computed, ref } from "vue";
 
-export const useCounterStore = defineStore({
-  id: 'counter',
-  state: () => ({
-    count: 10,
-    cart: reactive([]),
-  }),
+export const useCounterStore = defineStore('counter', () => {
+  const count = ref(0);
+  const cart = ref([]);
 
-  actions: ({
-    increaseCount(){
-      this.count++
-    },
+  function increaseCount() {
+    count.value++;
+  }
 
-    decreaseCount(){
-      this.count--
-    },
+  function decreaseCount() {
+    count.value--;
+  }
 
-    addToCart(obj){
-      this.cart.push(obj)
-    },
-  }),
+  function addToCart(obj) {
+    cart.value.push(obj);
+  }
 
-  getters: ({
-    oddOrEven: (state) => {
-      if (state.count % 2 === 0) return 'pair'
-      return'impair'
-    }
+  const oddOrEven = computed(() => count.value % 2 === 0 ? 'even' : 'odd');
 
-  })
-})
-
+  return ({
+    count,
+    cart,
+    oddOrEven,
+    increaseCount,
+    decreaseCount,
+    addToCart,
+  });
+});
