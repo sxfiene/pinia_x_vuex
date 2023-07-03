@@ -1,13 +1,31 @@
 {
   "compilerOptions": {
+    "target": "es6",
     "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true,
-    "sourceFiles": [
-      "src/stores/index.js",
-    ],
+    "strict": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "types": ["node", "commander" ],
   },
+
+  "lib": [
+    "es2015",
+    "dom"
+  ],
+  "declaration": true,
+  "declarationDir": "./dist/types/",
+  "sourceMap": true,
+  "outDir": "./dist/lib",
+  "strict": true,
+  "moduleResolution": "node",
+  "types": [
+    "node"
+  ],
+  "esModuleInterop": true,
+  "resolveJsonModule": true,
+  "experimentalDecorators": true,
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "dist"
   ]
 }

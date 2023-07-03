@@ -3,7 +3,7 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
     if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-        desc = { enumerable: true, get: function() { return m[k]; } };
+      desc = { enumerable: true, get: function() { return m[k]; } };
     }
     Object.defineProperty(o, k2, desc);
 }) : (function(o, m, k, k2) {
@@ -40,12 +40,12 @@ commander_1.program
 commander_1.program
     .command('one <filePath>')
     .action((filePath) => __awaiter(void 0, void 0, void 0, function* () {
-        fs.readdir(filePath, (_err, items) => {
-            for (let i = 0; i < items.length; i++) {
-                const currentfile = `${filePath}/${items[i]}`;
-                const result = (0, index2_1.convertSrc)(currentfile);
-                console.log(result);
-            }
-        });
-    }));
+    fs.readdir(filePath, (_err, items) => {
+        for (let i = 0; i < items.length; i++) {
+            const currentfile = `${filePath}/${items[i]}`;
+            const result = (0, index2_1.convertSrc)(currentfile);
+            console.log(result);
+        }
+    });
+}));
 commander_1.program.parse(process.argv);
