@@ -23,8 +23,8 @@ migration-vuex-pinia/\
 
 - src/components : Répertoire contenant les composants Vue réutilisables.
 - src/views : Répertoire contenant les vues principales de l'application.
-- src/store/vuex : Répertoire contenant le(s) module(s) Vuex avant la migration.
-- src/store/pinia : Répertoire contenant le(s) store(s) Pinia après la migration.
+- src/store/vuex : Répertoire contenant le module Vuex avant la migration.
+- src/store/pinia : Répertoire contenant le store Pinia après la migration.
 
 
 
