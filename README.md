@@ -9,6 +9,17 @@ C'était lors de mon stage en tant qu'expert front-end au sein de La Poste. L'ob
 
 ## Structure du projet
 
+migration-vuex-pinia/\
+├── src/\
+│   ├── components/ \
+│   ├── views/ \
+│   ├── store/ \
+│   │   ├── vuex/ \
+│   │   └── pinia/ \
+│   ├── App.vue \
+│   └── main.js \
+├── package.json \
+└── README.md 
 
 - src/components : Répertoire contenant les composants Vue réutilisables.
 - src/views : Répertoire contenant les vues principales de l'application.
