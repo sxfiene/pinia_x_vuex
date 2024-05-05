@@ -1,29 +1,20 @@
-# pinia_x_vuex
+# Description
 
-This template should help get you started developing with Vue 3 in Vite.
+C'était lors de mon stage en tant qu'expert front-end au sein de La Poste. L'objectif de ce projet était de migrer la gestion d'état de l'application Vue.js de Vuex vers Pinia, la nouvelle bibliothèque de gestion d'état recommandée par l'équipe principale de Vue.
 
-## Recommended IDE Setup
+## Prérequis
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- Node.js (version >= 12)
+- Vue.js (version >= 3)
 
-## Customize configuration
+## Structure du projet
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+- src/components : Répertoire contenant les composants Vue réutilisables.
+- src/views : Répertoire contenant les vues principales de l'application.
+- src/store/vuex : Répertoire contenant le(s) module(s) Vuex avant la migration.
+- src/store/pinia : Répertoire contenant le(s) store(s) Pinia après la migration.
 
-```sh
-npm install
-```
 
-### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+  
