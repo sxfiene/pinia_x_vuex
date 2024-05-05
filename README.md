@@ -44,8 +44,6 @@ En travaillant sur ce projet de migration de Vuex vers Pinia, j'ai pu développe
 
 - **Collaboration et communication :** Travailler au sein de l'équipe de développement m'a permis de renforcer mes compétences en collaboration et en communication, en particulier lors de la résolution de problèmes et de la prise de décisions architecturales.
 
-Ces compétences et bonnes pratiques acquises ont enrichi mon expérience en tant que développeur front-end et m'ont préparé à relever de nouveaux défis dans des projets futurs.
-
 
 
   
