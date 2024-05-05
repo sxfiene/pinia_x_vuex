@@ -26,7 +26,7 @@ migration-vuex-pinia/\
 - src/store/vuex : Répertoire contenant le module Vuex avant la migration.
 - src/store/pinia : Répertoire contenant le store Pinia après la migration.
 
-# Compétences et Bonnes Pratiques Acquises
+## Compétences et Bonnes Pratiques Acquises
 
 En travaillant sur ce projet de migration de Vuex vers Pinia, j'ai pu développer et mettre en pratique plusieurs compétences et bonnes pratiques essentielles en développement front-end : 
 
